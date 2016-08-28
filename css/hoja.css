@@ -12,7 +12,10 @@
 		display: inline-block;
 	}
 	#btn-logo{
-		width: 3em;
+		width: 2.5em;
+        padding: .3em;
+        padding-top: .5em;
+        padding-bottom: .4em;
 		position: fixed;
 		left:1em;
 		top:1em;
@@ -23,7 +26,113 @@
 	}
 	#btn-logo:hover{
 		border-color: green;
+        cursor: pointer;
 	}
+    header{
+        display: none;
+    }
+    .borde-solido{
+        display: none;
+    }
+    .colores-solido{
+        display:none;
+    }
+    .block1,.block2,.block3{
+		position: relative;
+		z-index: 3;
+		top: 0;
+	}
+	.block1{
+		text-align: justify;
+	}
+    .icono{
+		text-align: center;
+	}
+    .block1 span{
+		font-size: 2em;
+		display: inline-block;
+		border-style: solid;
+		border: 3px;
+		padding-top: 0.3em;
+		padding-bottom: 0.3em;
+		margin-top: 1em;
+		margin-bottom: 0.7em;
+		border-style: solid;
+		border-radius: 100px;
+		width: 2.2em;
+	}
+    
+	.block2 .plan{
+		border-style: solid;
+		border-width: 2px;
+		border-color: red;
+		text-align: center;
+		position: relative;
+	}
+	.block2 .plan:hover{
+		border-style: dashed;
+	}
+	.block2 .plan span{
+		font-size: 3em;
+		display: inline-block;
+		border-style: solid;
+		border-color: red;
+		border: 3px;
+		padding-top: .1em;
+		padding-bottom: .2em;
+		width: 2.2em;
+	}
+	.block2 .plan p{
+		font-size: 1.2em;
+	}
+	.block2 li{
+		text-align: center;
+		list-style: none;
+		margin-left: -15px;
+		margin-right: -15px;
+
+	}
+	.block2 .precio-plan{
+		padding-top: 1.5em;
+		width: 100%;
+		left: 0;
+	}
+	.block2 .plan .titulo-plan{
+		font-size: 1.5em;
+	}
+	.block2 a{
+		color: grey;
+		text-decoration: underline;
+		font-size: .8em;
+		font-weight: bold;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom:5px;
+        margin-bottom:1em;
+	}
+    .block3 p{
+        text-align: justify;
+    }
+    .block3 #titulo-financiamiento{
+        font-size: 1.3em;
+        font-weight: bold;
+        color:#2199e8;
+    }
+    .block3 input,.block3 textarea, .block3 select{
+        border-color: #2199e8;
+    }
+	.block3 #form-financiamiento button{
+		float: right;
+        background-color: #FFCC00;
+        color:black;
+	}
+    .block3 #link-help-form a{
+        color:black;
+        font-size: 1em;
+        top: -15px;
+        text-decoration: underline;
+        font-style: italic;
+    }
 }	
 
 
@@ -136,7 +245,7 @@
 		height: 40px;
 	}
 	.block1,.block2,.block3{
-		position: relative;
+        position: relative;
 		z-index: 3;
 		top: 0;
 		margin-left: 25%;
@@ -145,17 +254,16 @@
 		padding-bottom: 5em;
 		padding-right: 3em;
 	}
-	.block1{
-		text-align: justify;
-	}
-	.icono{
-		text-align: center;
-	}
+    .block1{
+        text-align: justify
+    }
+    .icono{
+        text-align: center;
+    }
 	.block1 span{
 		font-size: 3em;
 		display: inline-block;
 		border-style: solid;
-		border-color: red;
 		border: 3px;
 		padding-top: 0.3em;
 		padding-bottom: 0.3em;
@@ -229,13 +337,29 @@
 		padding-top: 10px;
 		padding-bottom: 5px;
 	}
-	#form-financiamiento{
-		padding-top: 2em;
+    .block3 p{
+        text-align: justify;
+    }
+    .block3 #titulo-financiamiento{
+        font-size: 1.3em;
+        font-weight: bold;
+        color:#2199e8;
+    }
+    .block3 input,.block3 textarea, .block3 select{
+        border-color: #2199e8;
+    }
+	.block3 #form-financiamiento button{
+		float: right;
+        background-color: #FFCC00;
+        color:black;
 	}
-	.input-medio{
-		width: 49%;
-		display: inline-block;
-	}
+    .block3 #link-help-form a{
+        color:black;
+        font-size: 1em;
+        top: -15px;
+        text-decoration: underline;
+        font-style: italic;
+    }
 
 }
 
