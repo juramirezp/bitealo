@@ -68,6 +68,7 @@
 		border-color: red;
 		text-align: center;
 		position: relative;
+        margin-top:2em;
 	}
 	.block2 .plan:hover{
 		border-style: dashed;
@@ -114,9 +115,15 @@
         text-align: justify;
     }
     .block3 #titulo-financiamiento{
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: bold;
         color:#2199e8;
+        margin-top:2em;
+        text-align: right;
+        padding-bottom: 1.2    em;
+    }
+    .block3 form{
+        margin-top: 1em;
     }
     .block3 input,.block3 textarea, .block3 select{
         border-color: #2199e8;

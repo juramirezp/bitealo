@@ -90,8 +90,8 @@
 
     </div>
 
-    <div class="block2 small-10 column align-stretch" data-equalizer>
-        <div class="plan medium-3 medium-offset-1 column " style="border-color:#3BCFD1" data-equalizer-watch>
+    <div class="block2 small-12 column align-stretch" data-equalizer>
+        <div class="plan column medium-3 medium-offset-1 small-10 small-offset-1 end " style="border-color:#3BCFD1" data-equalizer-watch>
             <span style="color:#3BCFD1" class="icon-rocket-launch"></span>
             <p style="color:#3BCFD1" class="titulo-plan">L&aacute;nzalo</p>
             <!-- <ul> -->
@@ -103,7 +103,7 @@
             <a href="" class="align-bottom">Ver Financiamiento</a>
             <!-- </ul> -->
         </div>
-        <div class="plan medium-3 medium-offset-1 column" style="border-color:#39C466" data-equalizer-watch>
+        <div class="plan column medium-3 medium-offset-1 small-10 small-offset-1 end" style="border-color:#39C466" data-equalizer-watch>
             <span style="color:#39C466" class="icon-websitebuilder"></span>
             <p style="color:#39C466" class="titulo-plan">Refr&eacute;scalo</p>
             <!-- <ul> -->
@@ -113,7 +113,7 @@
             <a href="" class="">Ver Financiamiento</a>
             <!-- </ul> -->
         </div>
-        <div class="plan medium-3 medium-offset-1 column " style="border-color:#F7CB08" data-equalizer-watch>
+        <div class="plan column medium-3 medium-offset-1 small-10 small-offset-1 end" style="border-color:#F7CB08" data-equalizer-watch>
             <span style="color:#F7CB08" class="icon-salealt"></span>
             <p style="color:#F7CB08" class="titulo-plan">V&eacute;ndelo</p>
             <!-- <ul> -->
@@ -145,7 +145,7 @@
                 <div class="row">
                     <div class="small-12 medium-6 columns">
                         <label>Nombre
-                            <input type="text" placeholder="Nombre" aria-describedby="exampleHelpText" required pattern="text">
+                            <input type="text" placeholder="Nombre" aria-describedby="exampleHelpText" required>
                         </label>
                         <span class="form-error">
           					Campo Obligatorio
@@ -154,7 +154,7 @@
                     
                     <div class="small-12 medium-6 columns">
                         <label>Empresa o Proyecto
-                            <input type="text" placeholder="Empresa o Proyecto" aria-describedby="exampleHelpTex" data-abide-ignore>
+                            <input type="text" placeholder="Empresa o Proyecto" aria-describedby="exampleHelpTex" data-abide-ignore required>
                         </label>
                         <span class="form-error">
                 			Campo Obligatorio
@@ -165,7 +165,7 @@
                 <div class="row">
                     <div class="small-12 medium-6 columns">
                         <label>Email
-                            <input type="email" placeholder="Email" aria-describedby="exampleHelpTex" data-abide-ignore>
+                            <input type="email" placeholder="Email" aria-describedby="exampleHelpTex" data-abide required>
                         </label>
                         <span class="form-error">
           					Campo Obligatorio
@@ -174,8 +174,9 @@
                     
                     <div class="small-12 medium-6 columns">
                         <label>Tel&eacute;fono
-                            <input type="number" placeholder="Tel&eacute;fono" aria-describedby="exampleHelpTex" data-abide-ignore>
+                            <input type="number" placeholder="Tel&eacute;fono" aria-describedby="exampleHelpTex" data-abide-ignore max="99999999999" min="9999999999">
                         </label>
+                        <p class="help-text" id="link-help-form">Ej. 56999999999</p>
                         <span class="form-error">
           					Campo Obligatorio
         				</span>
