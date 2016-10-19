@@ -4,6 +4,122 @@
 	letter-spacing: 1px;
 }
 
+/*------------------------Inicio Animacion Loader--------------------------*/
+#preloader{
+	position: fixed;
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+	background-color: white;
+	z-index: 300;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}
+
+.line {
+  animation: expand 1s ease-in-out infinite;
+
+  border-radius: 10px;
+  display: inline-block;
+  transform-origin: center center;
+  margin: 0 3px;
+  width: 1px;
+  height: 25px;
+}
+
+.line:nth-child(1) {
+  background: #34CBCD;
+}
+
+.line:nth-child(2) {
+  animation-delay: 180ms;
+  background: #CD0068;
+}
+
+.line:nth-child(3) {
+  animation-delay: 360ms;
+  background: #FFCC00;
+}
+
+.line:nth-child(4) {
+  animation-delay: 540ms;
+  background: #34CC68;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(2);
+  }
+}
+/*------------------------Fin Animacion Loader--------------------------*/
+
+/*------------------------Inicio Animacion Flecha Scroll--------------------------*/
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.arrow {
+  text-align: center;
+  color:white;
+  padding: 5px;
+  position:absolute;
+  margin: 0 auto;
+  width: 100%;
+	top: 90vh;
+	z-index: 200;
+}
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+/*------------------------Fin Animacion Flecha Scroll--------------------------*/
+
+
+
 @media screen and (max-width: 50.99em) {
 	#video-intro{
 		display: none;
@@ -111,6 +227,9 @@
 		padding-bottom:5px;
         margin-bottom:1em;
 	}
+	#li-soporte{
+		margin-bottom: 0 !important;
+	}
     .block3 p{
         text-align: justify;
     }
@@ -139,6 +258,14 @@
         top: -15px;
         text-decoration: underline;
         font-style: italic;
+    }
+    footer{
+    	background-color: #3E4B54;
+		width: 100%;	
+		position:relative;
+		margin-top:100px;
+		display: flex;
+		color:grey;
     }
 }	
 
@@ -366,6 +493,34 @@
         top: -15px;
         text-decoration: underline;
         font-style: italic;
+    }
+	
+	footer{
+    	background-color: #3E4B54;
+    	margin-left: 25%;
+		width: 75%;	
+		position:relative;
+		margin-top:100px;
+		display: flex;
+		color:white;
+    }
+    footer i{
+    	color:grey;
+    	width: 25px;
+    }
+    footer ul{
+    	list-style: none;
+    	font-size: .7em;
+    }
+    footer a{
+		margin-bottom: .3em;
+    	color:grey;	
+    }
+    footer a:hover i,footer a:hover{
+    	color:white;
+    }
+    footer p{
+    	margin-top:.5em;
     }
 
 }
