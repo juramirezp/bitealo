@@ -61,9 +61,12 @@
 
 /*------------------------Inicio Animacion Flecha Scroll--------------------------*/
 
-a {
+.bounce a {
   color: white;
   text-decoration: none;
+}
+.bounce a:hover{
+	color:#2199e8;
 }
 .arrow {
   text-align: center;
@@ -78,6 +81,9 @@ a {
 .bounce {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+}
+.bounce:hover{
+	animation: none;
 }
 @-webkit-keyframes bounce {
   0%,
@@ -126,6 +132,10 @@ a {
 	}
 	#img-intro{
 		display: inline-block;
+		width: 55%;
+		margin-left: 23%;
+		margin-top: 1em;
+		padding-bottom: 3em;
 	}
 	#btn-logo{
 		width: 2.5em;
@@ -139,6 +149,7 @@ a {
 		border-color: white;
 		border-width: 2px;
 		border-radius: 100px;
+		background-color: #808080;
 	}
 	#btn-logo:hover{
 		border-color: green;
@@ -163,6 +174,7 @@ a {
 	}
     .icono{
 		text-align: center;
+		padding:2.2em;
 	}
     .block1 span{
 		font-size: 2em;
@@ -230,16 +242,19 @@ a {
 	#li-soporte{
 		margin-bottom: 0 !important;
 	}
-    .block3 p{
+    #block3 p{
         text-align: justify;
     }
-    .block3 #titulo-financiamiento{
-        font-size: 1.5em;
-        font-weight: bold;
+    #block3 #titulo-financiamiento{
+        font-size: 1em;
         color:#2199e8;
         margin-top:2em;
         text-align: right;
-        padding-bottom: 1.2    em;
+    }
+    #block3 #sub-financiamiento{
+    	font-size: 1em !important;
+    	color:grey !important;
+    	font-style: italic !important;
     }
     .block3 form{
         margin-top: 1em;
@@ -316,10 +331,11 @@ a {
 		background-color: rgba(255, 255, 255, 0.1);
 		position: fixed;
 		z-index: 2;
-		min-height: 100%;
 		width: 25%;
-		top: 0;
+		top:0;
+		bottom: 0;
 		color: white;
+		height: calc(100vh - 40px);
 	}
 	.borde ul a{
 		text-decoration: none;
@@ -337,13 +353,34 @@ a {
 	.borde li:hover{
 		background-color: rgba(250,250,250,.7);
 	}
+	.borde #logo{
+		animation: solido-trans 1s ease-in-out;
+		width: 80%;
+		height:45vh;
+		margin:3em auto;
+		margin-top: 1.5em;
+		margin-bottom: 4em;
+	}
+	.borde #logo img{ 
+		position:absolute;
+		width: 85%;
+		top: 0;
+		-moz-transition: all 1s ease-in-out;
+		-webkit-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+	.borde #logo img.novisible{
+		opacity:0;
+		filter:alpha(opacity=0);
+	}
+	.borde #logo img.visible:hover {
+		opacity:0;
+		filter:alpha(opacity=0);
+	}
 	.borde-solido{
 		background-color: #fff;
-		color:black;
-	}
-	.borde-solido #logo img{
-		width: 70%;
-		margin-left: 15%;
+		color:black;	
 	}
 	.borde-solido ul{
 		margin-top: 3em;
@@ -393,6 +430,7 @@ a {
     }
     .icono{
         text-align: center;
+        padding:2.2em;
     }
 	.block1 span{
 		font-size: 3em;
@@ -474,13 +512,27 @@ a {
     .block3 p{
         text-align: justify;
     }
-    .block3 #titulo-financiamiento{
-        font-size: 1.3em;
+    #block3 #titulo-financiamiento{
+        font-size: 1.2em;
         font-weight: bold;
         color:#2199e8;
+        margin-top:.5em;
+        text-align: right;
+    }
+    #block3 #sub-financiamiento{
+    	text-align: right;
+    	font-size: .8em !important;
+    	color:grey !important;
+    	font-style: italic !important;
+    	padding-bottom: 1em;
     }
     .block3 input,.block3 textarea, .block3 select{
         border-color: #2199e8;
+    }
+    .callout{
+    	padding: 3px !important;
+    	text-align: center;
+    	font-size: .8em;
     }
 	.block3 #form-financiamiento button{
 		float: right;
@@ -497,20 +549,20 @@ a {
 	
 	footer{
     	background-color: #3E4B54;
-    	margin-left: 25%;
-		width: 75%;	
+		width: 100%;	
 		position:relative;
 		margin-top:100px;
 		display: flex;
 		color:white;
+		padding-top: 2em;
     }
     footer i{
     	color:grey;
     	width: 25px;
     }
-    footer ul{
-    	list-style: none;
+    footer #ul{
     	font-size: .7em;
+    	margin-top: 3em;
     }
     footer a{
 		margin-bottom: .3em;
@@ -522,7 +574,66 @@ a {
     footer p{
     	margin-top:.5em;
     }
+    #logo-footer{
+    	margin:4em auto;
+    }
+	footer input, footer textarea{
+		font-size: .9em !important;
+		height: 2.2em !important;
+		width: 100% !important;
+		margin-bottom: 5px !important;
+	}
+	footer label,footer .help-text{
+		color: grey;
+	}
+	footer .help-text{
+		margin-top: 3px;
+		margin-bottom: 5px;
+	}
+	#contacto{
+		padding:0 2em 2em 2em;
+	}
+	footer button{
+		float: right;
+	}
+	footer .imgInteres{
+		width: 60%;
+		margin: auto;
+		margin-left: 19%;
+		padding-bottom: .5em;
+	}
+	footer .imgInteres{
+		filter: url('#grayscale'); /* Versión SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+		filter: Gray(); /* IE4-8 and 9 */
 
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	footer .imgInteres:hover{ 
+		-webkit-filter: grayscale(0%);
+		-moz-filter: grayscale(0%);
+		-ms-filter: grayscale(0%);
+		-o-filter: grayscale(0%);
+		filter: none;
+
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+	footer i{
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
 }
 
 

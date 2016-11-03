@@ -1,0 +1,36 @@
+*{font-family:'Villeray';font-size:17px;letter-spacing:1px}#preloader{position:fixed;margin:0;width:100%;min-height:100vh;background-color:white;z-index:300}
+.loader{position:absolute;top:50%;left:48%}.line{animation:expand 1s ease-in-out infinite;border-radius:10px;display:inline-block;transform-origin:center center;margin:0 3px;width:1px;height:25px}
+.line:nth-child(1){background:#34cbcd}.line:nth-child(2){animation-delay:180ms;background:#cd0068}.line:nth-child(3){animation-delay:360ms;background:#fc0}
+.line:nth-child(4){animation-delay:540ms;background:#34cc68}@keyframes expand{0%{transform:scale(1)}25%{transform:scale(2)}}a{color:white;text-decoration:none}
+.arrow{text-align:center;color:white;padding:5px;position:absolute;margin:0 auto;width:100%;top:90vh;z-index:200}.bounce{-webkit-animation:bounce 2s infinite;animation:bounce 2s infinite}
+@-webkit-keyframes bounce{0%,20%,50%,80%,100%{-webkit-transform:translateY(0);transform:translateY(0)}40%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}
+60%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@keyframes bounce{0%,20%,50%,80%,100%{-webkit-transform:translateY(0);transform:translateY(0)}
+40%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}60%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@media screen and (max-width:50.99em){#video-intro{display:none}
+#img-intro{display:inline-block;width:55%;margin-left:23%;margin-top:1em;padding-bottom:3em}#btn-logo{width:2.5em;padding:.3em;padding-top:.5em;padding-bottom:.4em;position:fixed;left:1em;top:1em;border-style:solid;border-color:white;border-width:2px;border-radius:100px;background-color:#808080}
+#btn-logo:hover{border-color:green;cursor:pointer}header{display:none}.borde-solido{display:none}.colores-solido{display:none}.block1,.block2,.block3{position:relative;z-index:3;top:0}
+.block1{text-align:justify}.icono{text-align:center}.block1 span{font-size:2em;display:inline-block;border-style:solid;border:3px;padding-top:.3em;padding-bottom:.3em;margin-top:1em;margin-bottom:.7em;border-style:solid;border-radius:100px;width:2.2em}
+.block2 .plan{border-style:solid;border-width:2px;border-color:red;text-align:center;position:relative;margin-top:2em}.block2 .plan:hover{border-style:dashed}
+.block2 .plan span{font-size:3em;display:inline-block;border-style:solid;border-color:red;border:3px;padding-top:.1em;padding-bottom:.2em;width:2.2em}
+.block2 .plan p{font-size:1.2em}.block2 li{text-align:center;list-style:none;margin-left:-15px;margin-right:-15px}.block2 .precio-plan{padding-top:1.5em;width:100%;left:0}
+.block2 .plan .titulo-plan{font-size:1.5em}.block2 a{color:grey;text-decoration:underline;font-size:.8em;font-weight:bold;width:100%;padding-top:10px;padding-bottom:5px;margin-bottom:1em}
+#li-soporte{margin-bottom:0!important}.block3 p{text-align:justify}.block3 #titulo-financiamiento{font-size:1.5em;font-weight:bold;color:#2199e8;margin-top:2em;text-align:right;padding-bottom:1.2 em}
+.block3 form{margin-top:1em}.block3 input,.block3 textarea,.block3 select{border-color:#2199e8}.block3 #form-financiamiento button{float:right;background-color:#fc0;color:black}
+.block3 #link-help-form a{color:black;font-size:1em;top:-15px;text-decoration:underline;font-style:italic}footer{background-color:#3e4b54;width:100%;position:relative;margin-top:100px;display:flex;color:grey}
+}@media screen and (min-width:51em){header{display:none}header ul li{list-style:none;float:left;padding:.5em;padding-top:1.2em}header ul{position:fixed;z-index:99;float:left;right:0;margin-right:2em}
+header ul li a{text-decoration:none;color:white}header h1{position:fixed;z-index:-101}#video-intro{display:inline-block}#img-intro{display:none}#btn-logo{display:none}
+li span{font-size:2em}.borde{background-color:rgba(255,255,255,0.1);position:fixed;z-index:2;width:25%;bottom:0;color:white;height:100%}.borde ul a{text-decoration:none;color:white}
+.borde ul{width:100%;margin:0}.borde li{list-style:none;padding-bottom:5px;padding-left:10%}.borde li:hover{background-color:rgba(250,250,250,.7)}.borde #logo{animation:solido-trans 1s ease-in-out;width:80%;height:45vh;margin:3em auto}
+.borde-solido{background-color:#fff;color:black}.borde-solido #logo{animation:trans-solido 1s ease-in-out}@keyframes solido-trans{0%{background-image:url("../img/500b.png");background-repeat:no-repeat;background-size:100%}
+100%{background-image:url("../img/500g.500b.jpg");background-size:100%}}@keyframes trans-solido{0%{background-image:url("../img/logobordeblanco.png");background-size:100%}
+100%{background-image:url("../img/500b.png");background-repeat:no-repeat;background-size:100%}}.borde-solido ul{margin-top:3em}.borde-solido ul a{color:black}
+#logo img{width:100%;margin-top:5em}.colores{position:fixed;bottom:0;z-index:2;width:25%;text-align:center}.colores span{color:white;font-size:1.7em;display:none}
+.cuadroPie{width:25%;height:15px;float:left}.colores-solido span{display:inline}.colores-solido .cuadroPie{height:40px}.block1,.block2,.block3{position:relative;z-index:3;top:0;margin-left:25%;width:75%;padding-top:5em;padding-bottom:5em;padding-right:3em}
+.block1{text-align:justify}.icono{text-align:center}.block1 span{font-size:3em;display:inline-block;border-style:solid;border:3px;padding-top:.3em;padding-bottom:.3em;margin-top:1em;margin-bottom:.7em;border-style:solid;border-radius:100px;width:2.2em}
+.block2{display:flex}.block2 .plan{border-style:solid;border-width:2px;border-color:red;text-align:center;position:relative}.block2 .plan:hover{border-style:dashed}
+.block2 .plan span{font-size:3em;display:inline-block;border-style:solid;border-color:red;border:3px;padding-top:.2em;padding-bottom:.6em;width:2.2em}
+.block2 .plan p{font-size:1.2em}.block2 li{text-align:center;list-style:none;margin-left:-15px;margin-right:-15px}.block2 .precio-plan{padding-top:3em;position:absolute;bottom:1.2em;width:100%;left:0}
+.block2 .plan .titulo-plan{font-size:1.5em}.block2 a{color:grey;text-decoration:underline;font-size:.8em;font-weight:bold;position:absolute;bottom:0;left:0;width:100%;padding-top:10px;padding-bottom:5px}
+.block3 p{text-align:justify}.block3 #titulo-financiamiento{font-size:1.3em;font-weight:bold;color:#2199e8}.block3 input,.block3 textarea,.block3 select{border-color:#2199e8}
+.block3 #form-financiamiento button{float:right;background-color:#fc0;color:black}.block3 #link-help-form a{color:black;font-size:1em;top:-15px;text-decoration:underline;font-style:italic}
+footer{background-color:#3e4b54;width:100%;position:relative;margin-top:100px;display:flex;color:white}footer i{color:grey;width:25px}footer ul{list-style:none;font-size:.7em}
+footer a{margin-bottom:.3em;color:grey}footer a:hover i,footer a:hover{color:white}footer p{margin-top:.5em}}video,#capa{background-size:cover;bottom:0;height:auto;min-height:100%;min-width:100%;position:relative;right:0;width:100%;z-index:-100;top:0;margin-top:-3em}
