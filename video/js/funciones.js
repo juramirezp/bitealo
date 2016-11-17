@@ -1,10 +1,7 @@
 $(document).ready(function(){
 	$(".line").fadeOut();
-    $(window).scrollTop(0);
     $("#preloader").delay(500).fadeOut("slow");
 
-
-    // Efecto Scroll para borde
     $(document).scroll(function(){
         //Distancia de lo visible acerca del borde superior del documento
         //(Tope de la vista)
@@ -47,7 +44,6 @@ $(document).ready(function(){
         }
     });
 
-    //Validacion y envio de formulario de propuesta de negocio
     $('#btnFormula').click(function(){
         var ok=0;
         var nombre=$('input[name="formNombre"]').val();
@@ -57,6 +53,7 @@ $(document).ready(function(){
         var formula=$('select[name="formFormula"]').val();
         var finan=$('select[name="formFinan"]').val();
         var mensaje=$('textarea[name="formMensaje"]').val();
+        console.log(nombre+empresa+telefono+formula+email+finan+mensaje);
 
         if(nombre.length<3){
             $('input[name="formNombre"]').css('border-color','red');    
@@ -72,7 +69,7 @@ $(document).ready(function(){
             $('input[name="formEmpresa"]').css('border-color','#2199e8');    
         }
 
-        if(telefono.length<8){
+        if(telefono.length<10){
             $('input[name="formTelefono"]').css('border-color','red');    
         }else{
             ok++;
@@ -102,110 +99,24 @@ $(document).ready(function(){
             }else{
                 $.ajax({
                     type: 'POST',
-                    url: 'propCliente.php',
+                    url: $(this).attr('action'),
                     data: $(this).serialize(),
                     success: function(data) {
                         $('#form-financiamiento .alert').css('display','none');
                         $('#form-financiamiento .success').css('display','block');
                     }
-                });
+                }); 
+                $('#form-financiamiento input').val("");
+                $('#form-financiamiento textarea').val("");
                 e.preventDefault();
-                $('#form-financiamiento').each(function(){
-                    $(this).each (function() { this.reset(); });
-                })
-                setTimeout(function() {
-                    $("#form-financiamiento .success").fadeOut(1500);
-                },2500);
-                $('#form-financiamiento .success').css('display','none');
             }
         });
     });
 
-    // Animacion de scroll para flecha de index
     $('a.scroll').click(function(e){
         e.preventDefault();
-        $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 300);
+        $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
     });
-
-    //validacion y envio formulario de contacto footer
-    $('#btnCon').click(function(){
-        var ok=0;
-        var nombre=$('input[name="conNombre"]').val();
-        var telefono=$('input[name="conTelefono"]').val();
-        var email=$('input[name="conEmail"]').val();
-        var mensaje=$('textarea[name="conMensaje"]').val();
-
-        if(nombre.length<3){
-            $('input[name="conNombre"]').css('border-color','red');    
-        }else{
-            ok++;
-            $('input[name="conNombre"]').css('border-color','grey');        
-        }
-
-        if(telefono.length<8){
-            $('input[name="conTelefono"]').css('border-color','red');    
-        }else{
-            ok++;
-            $('input[name="conTelefono"]').css('border-color','grey');   
-        }
-
-        validacion = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-        if((email.length<3) || (!validacion.test(email))){
-            $('input[name="conEmail"]').css('border-color','red');    
-        }else{
-            ok++;
-            $('input[name="conEmail"]').css('border-color','grey');    
-        }
-
-        if(mensaje.length<3){
-            $('textarea[name="conMensaje"]').css('border-color','red');    
-        }else{
-            ok++;
-            $('textarea[name="conMensaje"]').css('border-color','grey');    
-        }
-        
-        $('#form-contacto').submit(function(e) {
-            if (ok != 4) {
-                e.preventDefault();
-                $('#form-contacto .success').css('display','none');
-                $('#form-contacto .alert').css('display','block');
-            }else{
-                $.ajax({
-                    type: 'POST',
-                    url: 'conCliente.php',
-                    data: $(this).serialize(),
-                    success: function(data) {
-                        $('#form-contacto .alert').css('display','none');
-                        $('#form-contacto .success').css('display','block');
-                    }
-                });
-                e.preventDefault();
-                $('#form-contacto').each(function(){
-                    $(this).each (function() { this.reset(); });
-                })
-                setTimeout(function() {
-                    $("#form-contacto .success").fadeOut(1500);
-                },2500);
-                $('#form-contacto .success').css('display','none');
-            }
-        });
-    });
-
-    //Animacion Menu Version Movil
-    $('#btn-logo').click(function(){
-        $('header').fadeIn("slow");
-    })
-    $('#salir-menu').click(function(){
-        $('header').fadeOut("slow");
-    })
-    $('.movil-menu-item').click(function(){
-        $('header').fadeOut("slow");
-    })
-    $('header').click(function(){
-        $('header').fadeOut("slow");
-    })
-
-
 });
 
 
@@ -213,4 +124,5 @@ $(window).load(function(){
     $(".line").fadeOut();
     $("#preloader").delay(500).fadeOut("slow");
 });
+
 

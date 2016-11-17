@@ -126,7 +126,7 @@
 
 
 
-@media screen and (max-width: 50.99em) {
+@media screen and (max-width: 799px) {
 	#video-intro{
 		display: none;
 	}
@@ -141,15 +141,16 @@
 		width: 2.5em;
         padding: .3em;
         padding-top: .5em;
-        padding-bottom: .4em;
+        padding-bottom: .5em;
 		position: fixed;
 		left:1em;
 		top:1em;
 		border-style: solid;
 		border-color: white;
 		border-width: 2px;
-		border-radius: 100px;
+		border-radius: 150px;
 		background-color: #808080;
+		z-index: 99;
 	}
 	#btn-logo:hover{
 		border-color: green;
@@ -157,7 +158,75 @@
 	}
     header{
         display: none;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(130,130,130,.8);
+        padding-top:10vh;
+        padding-bottom: 10vh;
+        padding-left: 15%;
+        padding-right: 15%;
+        position: fixed;
+        z-index: 100;
     }
+    .movil-menu{
+    	background-color: white;
+    	padding: 5%;
+    	text-align: center;
+    	position: relative;
+    }
+    .movil-menu-head{
+    	padding: 30px;
+    }
+    .movil-menu-head h1{
+    	border-style: solid;
+    	border-color: #CD0068;
+    	border:1;
+    	border-top: 0;
+    	border-left: 0;
+    	border-right: 0;
+    }
+    .movil-menu-head i{
+    	position: absolute;
+    	top:15px;
+    	right: 15px;
+    	padding: 10px;
+    }
+    .movil-menu-head i:hover{
+    	cursor: pointer;
+    }
+    .movil-menu-item{
+    	margin-bottom: 1em;
+    }
+    .movil-menu-item:hover{
+    	cursor: pointer;
+    	background-color: rgba(130,130,130,.1);
+    	color: black;
+    }
+    .movil-menu-footer{
+    	color:grey;
+    	margin-top: 40px;
+    	margin-left: 20px;
+    	margin-right: 20px;
+    	padding-top: 10px;
+    	margin-bottom: 1em !important;
+    	border-style: solid;
+    	border-color: #FFCC00;
+    	border:1;
+    	border-bottom: 0;
+    	border-left: 0;
+    	border-right: 0;
+    }
+    .cuadroPie{
+		width: 25%;
+		float: left;
+		text-align: center;
+		color:white;
+		padding-top: .1em;
+		padding-bottom: .1em;
+	}
+	.arrow{
+		display: none;
+	}
     .borde-solido{
         display: none;
     }
@@ -174,7 +243,10 @@
 	}
     .icono{
 		text-align: center;
-		padding:2.2em;
+		width: 40%;
+		margin: 0 auto;
+		margin-bottom: 2em;
+		margin-top: 2em;
 	}
     .block1 span{
 		font-size: 2em;
@@ -274,14 +346,72 @@
         text-decoration: underline;
         font-style: italic;
     }
-    footer{
+	footer{
     	background-color: #3E4B54;
 		width: 100%;	
 		position:relative;
 		margin-top:100px;
 		display: flex;
-		color:grey;
+		color:white;
+		padding-top: 2em;
     }
+    footer i{
+    	color:grey;
+    	width: 25px;
+    }
+    footer #ul{
+    	font-size: .7em;
+    	margin-top: 1em;
+    	text-align: center;
+    	margin-bottom: 2em;
+    }
+    footer a{
+		margin-bottom: .3em;
+    	color:grey;	
+    }
+    footer a:hover i,footer a:hover{
+    	color:white;
+    }
+    footer p{
+    	margin-top:.5em;
+    }
+    #cont-logo-footer{
+		position: relative;
+    }
+    #logo-footer{
+    	width: 30%;
+    	margin-bottom: 2em;
+    	margin-left: 35%;
+    }
+	footer input, footer textarea{
+		font-size: .9em !important;
+		height: 2.2em !important;
+		width: 100% !important;
+		margin-bottom: 5px !important;
+	}
+	footer label,footer .help-text{
+		color: grey;
+	}
+	footer .help-text{
+		margin-top: 3px;
+		margin-bottom: 5px;
+	}
+	#contacto{
+		padding:0 2em 2em 2em;
+	}
+	footer button{
+		float: right;
+	}
+	#linksI{
+		display: none;
+	}
+	footer i{
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
+	.titulo-footer{
+		text-align: center;
+	}
 }	
 
 
@@ -290,7 +420,7 @@
 
 
 
-@media screen and (min-width: 51em) {
+@media screen and (min-width: 800px) {
 	header{
 		display: none;
 	}
@@ -652,3 +782,14 @@ video , #capa{
     margin-top: -3em;
 }
 
+
+/*Error*/
+.blockError{
+	margin-top: 2em;
+}
+#errorT{
+	margin-top: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	color:orange;
+}

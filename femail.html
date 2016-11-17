@@ -1,88 +1,107 @@
 <html>
-<head>
-<title>Confirmación Contacto</title>
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+					<head>
+					<title>Propuesta Web</title>
+					<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-<style>
-	*{
-		font-family: 'Raleway', sans-serif;
-	}
-	html,body{
-		margin:0;
-		padding:0;
-	}
-	#cuerpo{
-		width:70%;
-		margin: 0 auto;
-	}
-	h1{
-		text-align: center;
-		width: 100%;
-		color:grey;
-		padding-bottom: 2em;
-		padding-top: 1em;
-	}
-	#divLogo{
-		width:100%;
-		text-align: center;
-	}
-	#logo{
-		width: 50%;
-		margin: auto;
-	}
-	#firma{
-		font-size: 1.2em;
-		color:grey;
-		font-weight: bold;
-	}
-	#pie{
-		margin-top: 3em;
-		background-color: grey;
-		color:white;
-		text-align: center;
-		padding-top: 2em;
-		padding-bottom: 2em;
-	}
-	#pie a, #pie span{
-		text-decoration: none;
-		color:white;
-		padding: .4em;
-	}
-</style>
-</head>
-	<body>
-		<div class="div" id="cuerpo">
-			<h1>!Recibimos tu mensaje!</h1>
-			<table>
-				<tr>
-					<td>
-						<div id="divLogo">
-							<img src="http://bitealo.cl/img/Logo-bitealo.jpg" alt="" id="logo">
-						</div>
-					</td>
-					<td>
-						<p>Hola $nombre,</p>
-						<p>Estamos felices de que te confies en nosotros, revisaremos tu propuesta y te contactaremos a la brevedad.</p>
-						<p>Ante cualquier consulta puedes escribirnos nuevamente o buscarnos en redes sociales.</p>
-						<p>Hasta Pronto
-						</br>
-						<span id="firma">Equipo Bitealo</span></p>
+					<style>
+						*{
+							font-family: "Raleway", sans-serif;
+						}
+						html,body{
+							margin:0;
+							padding:0;
+						}
+						#cuerpo{
+							width:70%;
+							margin: 0 auto;
+						}
+						h1{
+							text-align: center;
+							width: 100%;
+							color:grey;
+							padding-bottom: .4em;
+							padding-top: .4em;
+						}
+						#divLogo{
+							width:100%;
+							text-align: center;
+						}
+						#logo{
+							width: 35%;
+							margin: auto;
+						}
+						#spanFirma{
+							font-size: 1.2em;
+							color:grey;
+							font-weight: bold;
+						}
+						#pie{
+							margin-top: 3em;
+							background-color: grey;
+							color:white;
+							text-align: center;
+							padding-top: 2em;
+							padding-bottom: 2em;
+							width:100%;
+						}
+						#pie table a, #pie table span{
+							text-decoration: none;
+							color:white;
+							padding: .4em;
+						}
+						#mensaje{
+							font-style: italic;
+							text-align: justify;
+							margin-left: 5%;
+							margin-right: 5%;
+							padding-top: 10px;
+							padding-bottom: 10px;
+						}
+						#mensaje span, .justify span, table span{
+							font-weight: bold;
+						}
+						.justify{
+							text-align: justify;
+						}
+					</style>
+					</head>
+						<body>
+							<div class="div" id="cuerpo">
+							<div id="divLogo">
+								<img src="http://bitealo.cl/img/Logo-bitealo.jpg" alt="" id="logo">
+								</div>
+								<h1>!Tienen una nueva Propuesta!</h1>
+								<p class="justify">Hola, el cliente <span>'.$nombre.'</span> les realiza la siguiente propuesta:</p>
 
-						
+								<p id="mensaje">"'.$mensaje. saodfoewifjowjdfodwofnodino Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, quae. Doloremque eos id, blanditiis cum in a, aperiam delectus quaerat! Ipsam sit laudantium voluptate tenetur expedita temporibus excepturi illum culpa.'"</br>
+								<span>Plan: '.$formula.'</span></br>
+								<span>A Financiar: '.$finan.'</span></p>
+								
+								
+								<p>Sus datos de contacto son:</p>
+								<table>
+									<tr>
+										<td>Nombre: </td>
+										<td><span>'.$nombre.'</span></td>
+									</tr>
+									<tr>
+										<td>Empresa: </td>
+										<td><span>'.$empresa.'</span></td>
+									</tr>
+									<tr>
+										<td>Email: </td>
+										<td><span>'.$email.'</span></td>
+									</tr>
+									<tr>
+										<td>Telefono: </td>
+										<td><span>'.$telefono.'</span></td>
+									</tr>
+								</table>
 
-						
-						
+								<p>Analiza la propuesta y respondele a la brevedad.</p>
+								<p>Buen Dia! :)</p>
+								<p id="spanFirma">Financiamiento Bitealo.cl</p>
 
-
-					</td>
-				</tr>
-			</table>
-			
-		</div>
-		<div id="pie">
-				<span><a href="http://www.bitealo.cl">Bitealo.cl</a></span></br>
-				<span>Hola@bitealo.cl</span></br>
-				<span>Santiago - Chile</span>
-			</div>
-	</body>
-</html>
+							</div>
+						</body>
+					</html>
