@@ -1,0 +1,52 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+.logo{
+	width: 100%;
+}
+.frase{
+	text-align: center;
+	letter-spacing: 3px;
+	margin-top: 3px;
+	color:grey;
+	font-size: 1.5em;
+}
+td{
+	padding:2px;
+}
+input[type="text"]{
+	border-top: 1px solid #9e9e9e;
+	border-bottom: none;
+	height: 2px;
+	margin-bottom: 3px;
+}
+.tabla{
+	width: 98%;
+	margin-left: 1%;
+}
+.input-field{
+	margin-top: 1px !important;
+}
+.style-5 input[type="text"] {
+	padding: 10px;
+	border: solid 1px #fff;
+	box-shadow: inset 1px 1px 2px 0 #707070;
+	transition: box-shadow 0.3s;
+}
+.style-5 input[type="text"]:focus,
+.style-5 input[type="text"].focus {
+	box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+P{
+	margin:0;
+}
+.tabla2{
+	margin-top: 5em;
+}
+*{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.row{
+	margin-bottom: 5px;
+}

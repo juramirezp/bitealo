@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png">
+    <title>bitealo.cl | Web para Emprendedores</title>
+    <!-- Latest compiled and minified CSS -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/ficha.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+
+    <table class="striped tabla">
+        <thead>
+          <tr>
+              <th colspan="2">DETALLES DE LA APLICACIÓN</th>
+          </tr>
+      </thead>
+
+      <tbody>
+          <tr>
+            <td>Tipo:</td>
+            <td>
+                <div class="row">
+                    <div class="col s4">
+                        <p>
+                            <input class="with-gap" name="group3" type="radio" id="Escritorio" checked />
+                            <label for="Escritorio">Escritorio</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="group3" type="radio" id="Web" checked />
+                            <label for="Web">Web</label>
+                        </p>
+                    </div>
+                    <div class="col s4">
+                        <p>
+                            <input class="with-gap" name="group3" type="radio" id="Movil" checked />
+                            <label for="Movil">Movil</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="group3" type="radio" id="Servidor" checked />
+                            <label for="Servidor">Servidor</label>
+                        </p>
+                    </div>
+                    <div class="col s4"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Plataforma:</td>
+            <td>
+                <div class="row">
+                    <div class="col s4">
+                        <p>
+                            <input class="with-gap" name="Plataforma" type="radio" id="Android" checked />
+                            <label for="Android">Android</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="Plataforma" type="radio" id="IOS" checked />
+                            <label for="IOS">IOS</label>
+                        </p>
+                    </div>
+                    <div class="col s4">
+                        <p>
+                            <input class="with-gap" name="Plataforma" type="radio" id="Windows" checked />
+                            <label for="Windows">Windows</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="Plataforma" type="radio" id="Multiplataforma" checked />
+                            <label for="Multiplataforma">Multiplataforma</label>
+                        </p>
+                    </div>
+                    <div class="col s4"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Servidor:</td>
+            <td>
+                <div class="row">
+                    <div class="col s4">
+                        <p>
+                            <input class="with-gap" name="Servidor" type="radio" id="Apache" checked />
+                            <label for="Apache">Apache</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="Servidor" type="radio" id="Tomcat" checked />
+                            <label for="Tomcat">Tomcat</label>
+                        </p>
+                    </div>
+                    <div class="col s4">
+                        <p>
+                            <input class="with-gap" name="Servidor" type="radio" id="IIS" checked />
+                            <label for="IIS">IIS</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="Servidor" type="radio" id="Glassfish" checked />
+                            <label for="Glassfish">Glassfish</label>
+                        </p>
+                    </div>
+                    <div class="col s4">
+                        <p>
+                            <input class="with-gap" name="Servidor" type="radio" id="Otro" checked />
+                            <label for="Otro">Otro</label>
+                        </p>
+                        <p>
+                            <div class="input-field col s11 style-5">
+                              <input value="" id="first_name2" type="text" class="">
+                          </div>
+                      </p>
+                  </div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+        <td>Tecnologias lado Cliente:</td>
+        <td>
+            <div class="row">
+                <div class="col s4">
+                    <p>
+                        <input class="with-gap" name="HTML5" type="checkbox" id="HTML5"  />
+                        <label for="HTML5">HTML5</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="CSS" type="checkbox" id="CSS"  />
+                        <label for="CSS">CSS</label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <input class="with-gap" name="JavaScript" type="checkbox" id="JavaScript"  />
+                        <label for="JavaScript">JavaScript</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="Java" type="checkbox" id="Java"  />
+                        <label for="Java">Java</label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <input class="with-gap" name="Otro" type="checkbox" id="Otro"  />
+                        <label for="Otro">Otro</label>
+                    </p>
+                    <p>
+                        <div class="input-field col s11 style-5">
+                          <input value="" id="first_name2" type="text" class="">
+                      </div>
+                  </p>
+              </div>
+          </div>
+      </td>
+  </tr>
+  <tr>
+      <td>Tecnologias lado Servidor:</td>
+      <td>
+        <div class="row">
+            <div class="col s4">
+                <p>
+                    <input class="with-gap" name="PHP" type="checkbox" id="PHP"  />
+                    <label for="PHP">PHP</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="Ruby" type="checkbox" id="Ruby"  />
+                    <label for="Ruby">Ruby</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="Java" type="checkbox" id="Java"  />
+                    <label for="Java">Java</label>
+                </p>
+            </div>
+            <div class="col s4">
+                <p>
+                    <input class="with-gap" name="Phyton" type="checkbox" id="Phyton"  />
+                    <label for="Phyton">Phyton</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="JavaScript2" type="checkbox" id="JavaScript2"  />
+                    <label for="JavaScript2">JavaScript</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="ASP" type="checkbox" id="ASP"  />
+                    <label for="ASP">ASP.Net</label>
+                </p>
+            </div>
+            <div class="col s4">
+                <p>
+                    <input class="with-gap" name="XML" type="checkbox" id="XML"  />
+                    <label for="XML">XML</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="Otro" type="checkbox" id="Otro"  />
+                    <label for="Otro">Otro</label>
+                </p>
+                <p>
+                    <div class="input-field col s11 style-5">
+                      <input value="" id="first_name2" type="text" class="">
+                  </div>
+              </p>
+          </div>
+      </div>
+  </td>
+</tr>
+<tr>
+    <td>Base de Datos:</td>
+    <td>
+        <div class="row">
+            <div class="col s4">
+                <p>
+                    <input class="with-gap" name="Base" type="radio" id="Si" checked />
+                    <label for="Si">Si</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="Base" type="radio" id="No" checked />
+                    <label for="No">No</label>
+                </p>
+            </div>
+            <div class="col s4">
+                <p>
+                    <input class="with-gap" name="Datos" type="radio" id="SQL" checked />
+                    <label for="SQL">SQL Server</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="Datos" type="radio" id="Oracle" checked />
+                    <label for="Oracle">Oracle</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="Datos" type="radio" id="MySQL" checked />
+                    <label for="MySQL">MySQL</label>
+                </p>
+            </div>
+            <div class="col s4">
+                <p>
+                    <input class="with-gap" name="Datos" type="radio" id="PostgreSQL" checked />
+                    <label for="PostgreSQL">PostgreSQL</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="Datos" type="radio" id="Otro" checked />
+                    <label for="Otro">Otro</label>
+                </p>
+                <p>
+                    <div class="input-field col s11 style-5">
+                      <input value="" id="first_name2" type="text" class="">
+                  </div>
+              </p>
+          </div>
+      </div>
+  </td>
+</tr>
+<tr>
+    <td>API Interna:</td>
+    <td>
+        <div class="row">
+            <div class="col s4">
+                <p>
+                    <input class="with-gap" name="Interna" type="radio" id="1" checked />
+                    <label for="1">Si</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="Interna" type="radio" id="2" checked />
+                    <label for="2">No</label>
+                </p>
+            </div>
+            <div class="col s6">
+                <p>
+                    <div class="input-field col s11 style-5">
+                      <input value="" id="first_name2" type="text" class="">
+                  </div>
+              </p>
+              <p>
+                <div class="input-field col s11 style-5">
+                  <input value="" id="first_name2" type="text" class="">
+              </div>
+          </p>
+          <p>
+            <div class="input-field col s11 style-5">
+              <input value="" id="first_name2" type="text" class="">
+          </div>
+      </p>
+  </div>
+</div>
+</td>
+</tr>
+<tr>
+    <td>API Externa:</td>
+    <td>
+        <div class="row">
+            <div class="col s4">
+                <p>
+                    <input class="with-gap" name="Externa" type="radio" id="3" checked />
+                    <label for="3">Si</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="Externa" type="radio" id="4" checked />
+                    <label for="4">No</label>
+                </p>
+            </div>
+            <div class="col s6">
+                <p>
+                    <div class="input-field col s11 style-5">
+                      <input value="" id="first_name2" type="text" class="">
+                  </div>
+              </p>
+              <p>
+                <div class="input-field col s11 style-5">
+                  <input value="" id="first_name2" type="text" class="">
+              </div>
+          </p>
+          <p>
+            <div class="input-field col s11 style-5">
+              <input value="" id="first_name2" type="text" class="">
+          </div>
+      </p>
+  </div>
+</div>
+</td>
+</tr>
+<tr>
+    <td>Observaciones:</td>
+    <td>
+        <div class="row">
+            <div class="col s10">
+                <p>
+                    <div class="input-field col s11 style-5">
+                      <input value="" id="first_name2" type="text" class="">
+                  </div>
+              </p>
+              <p>
+                <div class="input-field col s11 style-5">
+                  <input value="" id="first_name2" type="text" class="">
+              </div>
+          </p>
+          <p>
+            <div class="input-field col s11 style-5">
+              <input value="" id="first_name2" type="text" class="">
+
+          </div>
+      </p>
+  </div>
+</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="row tabla tabla2">
+    <div class="col s6">
+        <table class="striped ">
+            <thead>
+              <tr>
+                  <th colspan="2">INFORMACIÓN DEL SERVIDOR</th>
+              </tr>
+          </thead>
+          <tr>
+            <td>Origen:</td>
+            <td><p>
+                <div class="input-field col s11 style-5">
+                  <input value="" id="first_name2" type="text" class="">
+
+              </div>
+          </p></td>
+      </tr>
+      <tr>
+        <td>Proveedor:</td>
+        <td><p>
+            <div class="input-field col s11 style-5">
+              <input value="" id="first_name2" type="text" class="">
+
+          </div>
+      </p></td>
+  </tr>
+  <tr>
+    <td>Espacio:</td>
+    <td><p>
+        <div class="input-field col s11 style-5">
+          <input value="" id="first_name2" type="text" class="">
+
+      </div>
+  </p></td>
+</tr>
+<tr>
+    <td>Memoria:</td>
+    <td><p>
+        <div class="input-field col s11 style-5">
+          <input value="" id="first_name2" type="text" class="">
+
+      </div>
+  </p></td>
+</tr>
+<tr>
+    <td>Transferencia:</td>
+    <td><p>
+        <div class="input-field col s11 style-5">
+          <input value="" id="first_name2" type="text" class="">
+
+      </div>
+  </p></td>
+</tr>
+<tr>
+    <td>Correos:</td>
+    <td><p>
+        <div class="input-field col s11 style-5">
+          <input value="" id="first_name2" type="text" class="">
+
+      </div>
+  </p></td>
+</tr>
+<tr>
+    <td>Usuario:</td>
+    <td><p>
+        <div class="input-field col s11 style-5">
+          <input value="" id="first_name2" type="text" class="">
+
+      </div>
+  </p></td>
+</tr>
+<tr>
+    <td>Contraseña</td>
+    <td><p>
+        <div class="input-field col s11 style-5">
+          <input value="" id="first_name2" type="text" class="">
+
+      </div>
+  </p></td>
+</tr>
+<tr>
+    <td>Otros:</td>
+    <td><p>
+        <div class="input-field col s11 style-5">
+          <input value="" id="first_name2" type="text" class="">
+
+      </div>
+  </p>
+  <p>
+    <div class="input-field col s11 style-5">
+      <input value="" id="first_name2" type="text" class="">
+
+  </div>
+</p>
+</td>
+</tr>
+<tbody>
+</tbody>
+</table>
+</div>
+<div class="col s6">
+    <table class="striped ">
+        <thead>
+          <tr>
+              <th colspan="2">INFORMACIÓN DEL DOMINIO</th>
+          </tr>
+      </thead>
+      <tr>
+        <td>Origen:</td>
+        <td>
+                <div class="input-field col s11 style-5">
+                  <input value="" id="first_name2" type="text" class="">
+
+              </div>
+      </td>
+  </tr>
+  <tr>
+    <td>Proveedor:</td>
+    <td>
+            <div class="input-field col s11 style-5">
+              <input value="" id="first_name2" type="text" class="">
+
+          </div>
+  </td>
+</tr>
+<tr>
+    <td>Nombre:</td>
+    <td>
+        <p>
+            <div class="input-field col s11 style-5">
+              <input value="" id="first_name2" type="text" class="">
+
+          </div>
+      </p>
+  </td>
+</tr>
+<tr>
+    <td>Usuario:</td>
+    <td>
+        <p>
+            <div class="input-field col s11 style-5">
+              <input value="" id="first_name2" type="text" class="">
+
+          </div>
+      </p>
+  </td>
+</tr>
+<tr>
+    <td>Contraseña:</td>
+    <td>
+        <p>
+            <div class="input-field col s11 style-5">
+              <input value="" id="first_name2" type="text" class="">
+
+          </div>
+      </p>
+  </td>
+</tr>
+<tr>
+    <td>Otros:</td>
+    <td><p>
+        <div class="input-field col s11 style-5">
+          <input value="" id="first_name2" type="text" class="">
+
+      </div>
+  </p>
+  <p>
+    <div class="input-field col s11 style-5">
+      <input value="" id="first_name2" type="text" class="">
+
+  </div>
+</p>
+</td>
+</tr>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+
+</html>
